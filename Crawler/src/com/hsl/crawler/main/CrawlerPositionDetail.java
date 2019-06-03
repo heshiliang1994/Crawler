@@ -1,4 +1,4 @@
-package com.hsl.crawler.lagou;
+package com.hsl.crawler.main;
 
 import java.net.URI;
 import java.net.URISyntaxException;

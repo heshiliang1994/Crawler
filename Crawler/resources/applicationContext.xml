@@ -171,10 +171,10 @@
     	<constructor-arg name="filePath" value="requestinfo.properties"/>
     </bean>
     <!-- 主函数 -->
-    <bean id="crawlerPositionList" class="com.hsl.crawler.lagou.CrawlerPositionList"/>
-    <bean id="crawlerPageList" class="com.hsl.crawler.lagou.CrawlerPageList"/>
-    <bean id="crawlerPositionDetail" class="com.hsl.crawler.lagou.CrawlerPositionDetail"/>
-    <bean id="extractPositionDetailAndsSplit" class="com.hsl.crawler.lagou.ExtractPositionDetailAndsSplit"/>
+    <bean id="crawlerPositionList" class="com.hsl.crawler.main.CrawlerPositionList"/>
+    <bean id="crawlerPageList" class="com.hsl.crawler.main.CrawlerPageList"/>
+    <bean id="crawlerPositionDetail" class="com.hsl.crawler.main.CrawlerPositionDetail"/>
+    <bean id="extractPositionDetailAndsSplit" class="com.hsl.crawler.main.ExtractPositionDetailAndsSplit"/>
     
     <!-- AOP：日志 -->
     <bean id="logging" class= "com.hsl.crawler.log.Logging" />
