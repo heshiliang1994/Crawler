@@ -77,7 +77,7 @@
         <!-- 设置连接管理器 -->
         <property name="connectionManager" ref="httpClientConnectionManager" />
         <property name="defaultCookieStore" ref="cookieStore" />
-        <!-- <property name="retryHandler" ref="retryHandler" /> -->
+        <property name="retryHandler" ref="retryHandler" />
     </bean>
     
     <!-- 定义Httpclient对象 -->
