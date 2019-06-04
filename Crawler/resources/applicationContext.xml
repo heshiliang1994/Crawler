@@ -21,7 +21,8 @@
     <context:annotation-config/>
     <!-- 配置数据库连接池信息 -->
 	<context:property-placeholder location="*.properties" />
-	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">   
+	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" 
+		init-method="init" destroy-method="close">   
     	<property name="url" value="${jdbc.url}" />  
     	<property name="username" value="${jdbc.username}" />  
     	<property name="password" value="${jdbc.password}" />    
@@ -82,7 +83,7 @@
     
     <!-- 定义Httpclient对象 -->
     <bean id="httpClient" class="org.apache.http.impl.client.CloseableHttpClient"
-        factory-bean="httpClientBuilder" factory-method="build" scope="singleton"/>
+        factory-bean="httpClientBuilder" factory-method="build" scope="singleton" destroy-method="close"/>
    
     <!-- requestConfig工厂 -->
     <bean id="requestConfigBuilder" class="org.apache.http.client.config.RequestConfig.Builder">
